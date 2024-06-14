@@ -53,13 +53,33 @@ class SandwichMachine:
     def process_coins(self):
         """Returns the total calculated from coins inserted.
            Hint: include input() function here, e.g. input("how many quarters?: ")"""
+        pass
 
     def transaction_result(self, coins, cost):
         """Return True when the payment is accepted, or False if money is insufficient.
            Hint: use the output of process_coins() function for cost input"""
-
+        pass
     def make_sandwich(self, sandwich_size, order_ingredients):
         """Deduct the required ingredients from the resources.
            Hint: no output"""
-
+        pass
 ### Make an instance of SandwichMachine class and write the rest of the codes ###
+
+def main():
+    machine = SandwichMachine(resources)
+
+    test_ingredients = recipes["small"]["ingredients"]
+    if machine.check_resources(test_ingredients):
+        print("This is enough for a small sandwich.")
+    else:
+        print("This is not enough for a small sandwich.")
+
+    test_ingredients = recipes["large"]["ingredients"]
+    if machine.check_resources(test_ingredients):
+        print("This is enough for a large sandwich.")
+    else:
+        print("This is not enough for a large sandwich.")
+
+
+if __name__ == "__main__":
+    main()
